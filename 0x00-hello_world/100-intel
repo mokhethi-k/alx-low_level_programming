@@ -1,0 +1,2 @@
+#!/binx/bash
+gcc $CFILE -S
