@@ -7,9 +7,9 @@
 
 int main(void)
 {
-	int ascii = 90;
+	int ascii = 122;
 
-	while (ascii >= 65)
+	while (ascii >= 97)
 	{
 		putchar(ascii);
 		ascii--;
