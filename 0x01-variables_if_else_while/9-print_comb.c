@@ -9,8 +9,12 @@ int main(void)
 {
 	int ascii = 48;
 
-	while (ascii < 58)
+	while (ascii <= 57)
 	{
+		if (ascii == 57)
+		{
+			break;
+		}
 		putchar(ascii);
 		putchar(',');
 		putchar(' ');
