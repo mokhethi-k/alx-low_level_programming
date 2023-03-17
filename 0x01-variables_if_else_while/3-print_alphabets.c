@@ -14,11 +14,10 @@ int main(void)
 		putchar(ascii);
 		ascii++;
 	}
-	do
-	{
+	do{
 		putchar(ascii2);
 		ascii2++;
-	}while (ascii2 < 91);
+	} while (ascii2 < 91);
 	putchar('\n');
 
 	return (0);
