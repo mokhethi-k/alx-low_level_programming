@@ -15,6 +15,7 @@ int main(void)
 		if (ascii == 101 || ascii == 113)
 		{
 
+			ascii++;
 			continue;
 		}
 
