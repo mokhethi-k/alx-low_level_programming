@@ -7,15 +7,18 @@
  */
 int main(void)
 {
-	int ascii = 97, ascii2 = 173;
+	int ascii = 97, ascii2 = 65;
 
-	while (ascii < 123 && ascii2 < 91)
+	while (ascii < 123)
 	{
 		putchar(ascii);
-		putchar(ascii2);
 		ascii++;
-		ascii2++;
 	}
+	do
+	{
+		putchar(ascii2);
+		ascii2++;
+	}while (ascii2 < 91);
 	putchar('\n');
 
 	return (0);
