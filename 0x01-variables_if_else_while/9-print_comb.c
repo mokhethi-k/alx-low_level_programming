@@ -11,11 +11,12 @@ int main(void)
 
 	while (ascii <= 57)
 	{
+		putchar(ascii);
 		if (ascii == 57)
 		{
 			break;
 		}
-		putchar(ascii);
+
 		putchar(',');
 		putchar(' ');
 		ascii++;
