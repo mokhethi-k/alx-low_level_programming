@@ -15,7 +15,7 @@ int main(void)
 		ascii++;
 	}
 	do {
-		putchar(ascii);
+		putchar(ascii2);
 		ascii++;
 	} while (ascii2 <= 102);
 
