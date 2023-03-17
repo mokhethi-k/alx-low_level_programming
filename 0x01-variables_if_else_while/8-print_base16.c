@@ -19,5 +19,7 @@ int main(void)
 		ascii2++;
 	} while (ascii2 <= 102);
 
+	putchar('\n');
+
 	return (0);
 }
