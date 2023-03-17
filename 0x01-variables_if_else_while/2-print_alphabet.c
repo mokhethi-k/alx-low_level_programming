@@ -12,6 +12,7 @@ int main(void)
 	while (ascii < 123)
 	{
 		putchar(ascii);
+		ascii++;
 	}
 	putchar('\n');
 
