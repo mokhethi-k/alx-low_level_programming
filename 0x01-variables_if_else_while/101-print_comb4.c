@@ -11,9 +11,9 @@ int main(void)
 
 	for (ascii = 48; ascii < 58; ascii++)
 	{
-		for (ascii1 = 49; ascii1 < 58; ascii++)
+		for (ascii1 = 49; ascii1 < 58; ascii1++)
 		{
-			for (ascii2 = 50; ascii2 < 58; ascii++)
+			for (ascii2 = 50; ascii2 < 58; ascii2++)
 			{
 				if (ascii2 > ascii1 && ascii2 > ascii)
 				{
