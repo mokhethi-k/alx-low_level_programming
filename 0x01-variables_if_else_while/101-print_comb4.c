@@ -9,22 +9,21 @@ int main(void)
 {
 	int ascii, ascii1, ascii2;
 
-	for (ascii = 0; ascii < 8; ascii++)
+	for (ascii = 0; ascii < 10; ascii++)
 	{
-		for (ascii1 = ascii + 1; ascii1 < 9; ascii1++)
+		for (ascii1 = 1; ascii1 < 10; ascii1++)
 		{
-			for (ascii2 = ascii1 + 1; ascii2 < 10; ascii++)
+			for (ascii2 = 2; ascii2 < 10; ascii++)
 			{
-				putchar((ascii % 10) + '0');
-				putchar((ascii1 % 10) + '0');
-				putchar((ascii2 % 10) + '0');
+				putchar(ascii + '0');
+				putchar(ascii1 + '0');
+				putchar(ascii2 + '0');
 
-				if (ascii == 7 && ascii1 == 8 && ascii2 == 9)
+				if (ascii + ascii1 + ascii2 != 24)
 				{
-					continue;
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(',');
-				putchar(' ');
 			}
 		}
 	}
