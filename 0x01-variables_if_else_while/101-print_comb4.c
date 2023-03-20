@@ -2,7 +2,6 @@
 /**
  * main - Entry poi
  * Description: print all different combinations of three digits
->>>>>>> d5271f06851a83a18b39e8392e0b5fc2138f686e
  * Return: Always returns 0 on success
  */
 
