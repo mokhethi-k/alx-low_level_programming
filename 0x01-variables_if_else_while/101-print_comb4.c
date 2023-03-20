@@ -10,7 +10,6 @@ int main(void)
 {
 	int ascii, ascii1, ascii2;
 
-<<<<<<< HEAD
 	for (ascii = 0; ascii < 8; ascii++)
 	{
 		for (ascii1 = ascii + 1; ascii1 < 9; ascii1++)
