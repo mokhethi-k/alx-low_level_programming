@@ -15,9 +15,9 @@ int main(void)
 		{
 			for (ascii2 = ascii1 + 1; ascii2 < 10; ascii++)
 			{
-				putchar(ascii);
-				putchar(ascii1);
-				putchar(ascii2);
+				putchar((ascii % 10) + '0');
+				putchar((ascii1 % 10) + '0');
+				putchar((ascii2 % 10) + '0');
 
 				if (ascii == 7 && ascii1 == 8 && ascii2 == 9)
 				{
