@@ -15,17 +15,21 @@ int main(void)
 		{
 			for (ascii2 = 2; ascii2 < 10; ascii++)
 			{
-				putchar(ascii + '0');
-				putchar(ascii1 + '0');
-				putchar(ascii2 + '0');
-
-				if (ascii + ascii1 + ascii2 != 24)
+				if (ascii < ascii1 && ascii1 < ascii2)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(ascii + '0');
+					putchar(ascii1 + '0');
+					putchar(ascii2 + '0');
+
+					if (ascii + ascii1 + ascii2 != 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
