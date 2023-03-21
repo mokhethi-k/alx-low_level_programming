@@ -7,28 +7,35 @@
 
 int main(void)
 {
-	int ascii, ascii1, ascii2;
+	int ascii = 0, ascii1, ascii2;
 
-	for (ascii = 0; ascii < 10; ascii++)
+	while (ascii <= 9)
 	{
-		for (ascii1 = 1; ascii1 < 10; ascii1++)
+		ascii1 = 0;
+		while (ascii1 <= 9)
 		{
-			for (ascii2 = 2; ascii2 < 10; ascii++)
+			ascii2 = 0;
+			while (ascii2 <= 9)
 			{
-				if (ascii < ascii1 && ascii1 < ascii2)
+				if (ascii != ascii1 &&
+				    ascii < ascii1 &&
+				    ascii1 != ascii2 &&
+				    ascii1 < ascii2)
 				{
-					putchar(ascii + '0');
-					putchar(ascii1 + '0');
-					putchar(ascii2 + '0');
-
+					putchar(ascii + 48);
+					putchar(ascii1 + 48);
+					putchar(ascii2 + 48);
 					if (ascii + ascii1 + ascii2 != 24)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
+				ascii2++;
 			}
+			ascii1++;
 		}
+		ascii++;
 	}
 	putchar('\n');
 	return (0);
