@@ -5,7 +5,7 @@
  * @num: a number to start from
  * Return: retuns all numbers
  */
-int print_to_98(int num)
+void print_to_98(int num)
 {
 	int i;
 
