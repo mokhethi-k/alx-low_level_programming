@@ -15,17 +15,23 @@ void print_to_98(int num)
 		for (i = num; i < 99; i++)
 		{
 			printf("%d, ", i);
+			if (num == 98)
+				break;
 		}
 	}
 	else if (num == 98)
 	{
 		printf("%d, ", 98);
+		if (num == 98)
+			break;
 	}
 	else if (num > 98)
 	{
 		for (i = num; i != 97; i--)
 		{
 			printf("%d, ", i);
+			if (num == 98)
+				break;
 		}
 	}
 	putchar('\n');
