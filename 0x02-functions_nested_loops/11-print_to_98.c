@@ -1,0 +1,31 @@
+#include <stdlib.h>
+#include "main.h"
+/**
+ * print_to_98 - Prints from a given number to 98
+ * @num: a number to start from
+ * Return: retuns all numbers
+ */
+int print_to_98(int num)
+{
+	int i;
+
+	if (num <= 0 && num < 99)
+	{
+		for (i = num; i < 99; i++)
+		{
+			printf("%d", num);
+		}
+	}
+	else if (num == 98)
+	{
+		printf("%d", 98);
+	}
+	else if (num > 98)
+	{
+		for (i = num; i > 99; i--)
+		{
+			printf("%d", i);
+		}
+	}
+	putchar('\n');
+}
