@@ -15,7 +15,7 @@ void print_to_98(int num)
 		for (i = num; i < 99; i++)
 		{
 			printf("%d", i);
-			if (num != 98)
+			if (num != 97)
 			{
 				putchar(',');
 				putchar(' ');
@@ -25,7 +25,7 @@ void print_to_98(int num)
 	else if (num == 98)
 	{
 		printf("%d", 98);
-		if (num != 98)
+		if (num != 97)
 		{
 			putchar(',');
 			putchar(' ');
@@ -36,7 +36,7 @@ void print_to_98(int num)
 		for (i = num; i > 97; i--)
 		{
 			printf("%d", i);
-			if (num != 98)
+			if (num != 97)
 			{
 				putchar(',');
 				putchar(' ');
@@ -48,7 +48,7 @@ void print_to_98(int num)
 		for (i = num; i < 99; i++)
 		{
 			printf("%d", i);
-			if (num != 98)
+			if (num != 97)
 			{
 				putchar(',');
 				putchar(' ');
