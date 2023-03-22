@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - Prints from a given number to 98
  * @num: a number to start from
