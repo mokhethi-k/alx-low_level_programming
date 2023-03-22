@@ -32,11 +32,10 @@ void print_to_98(int num)
 			{
 				printf("%d, ", i);
 			}
-			else if (i ==98)
+			else if (i == 98)
 			{
 				printf("%d\n", i);
 			}
 		}
 	}
-	putchar('\n');
 }
