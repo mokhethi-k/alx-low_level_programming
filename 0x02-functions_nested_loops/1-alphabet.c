@@ -4,7 +4,7 @@
  * print_letter - print a letter
  * Return: Returns nothing
  */
-void void print_alphabet(void)
+void print_alphabet(void)
 {
 	int alphabet;
 
