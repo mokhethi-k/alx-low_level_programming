@@ -14,11 +14,11 @@ void print_to_98(int num)
 	{
 		for (i = num; i < 99; i++)
 		{
-			if (num != 97)
+			if (i != 98)
 			{
 				printf("%d, ", i);
 			}
-			else if (num ==98)
+			else if (i == 98)
 			{
 				printf("%d\n", i);
 			}
@@ -28,11 +28,11 @@ void print_to_98(int num)
 	{
 		for (i = num; i != 97; i--)
 		{
-			if (num != 97)
+			if (i != 98)
 			{
 				printf("%d, ", i);
 			}
-			else if (num ==98)
+			else if (i ==98)
 			{
 				printf("%d\n", i);
 			}
