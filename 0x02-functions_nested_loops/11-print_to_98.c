@@ -20,7 +20,7 @@ void print_to_98(int num)
 			}
 			else if (num ==98)
 			{
-				printf("%d\n");
+				printf("%d\n", i);
 			}
 		}
 	}
@@ -38,7 +38,7 @@ void print_to_98(int num)
 			}
 			else if (num ==98)
 			{
-				printf("%d\n");
+				printf("%d\n", i);
 			}
 		}
 	}
