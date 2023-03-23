@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * @n: multiplying number
+ *@n: size of the line
  *
  *Return: returns nothing
  */
