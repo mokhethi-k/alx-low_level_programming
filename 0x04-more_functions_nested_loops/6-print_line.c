@@ -11,9 +11,9 @@ void print_line(int n)
 
 	if (n <= 0)
 	{
-		continue;
+		_putchar('\n');
 	}
-	else
+	else if (n >= 1)
 	{
 		int i;
 
@@ -21,6 +21,6 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
