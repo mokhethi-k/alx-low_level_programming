@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/* Descriptin: printing 98 */
 int main(void)
 {
 	int n;
