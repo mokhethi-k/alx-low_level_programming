@@ -26,5 +26,5 @@ int calc(int x, int y)
 	else if (x * x > y)
 		return (-1);
 	else
-		return (calc(y, x + 1);
+		return (calc(y, x + 1));
 }
