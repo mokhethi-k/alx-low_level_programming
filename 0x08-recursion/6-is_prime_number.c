@@ -28,6 +28,5 @@ int prime_calc(int x, int y)
 	else if (x % y == 0 && y > 0)
 		return (0);
 	else
-		return(prime_calc(x, y - 1));
+		return (prime_calc(x, y - 1));
 }
-	       
