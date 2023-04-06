@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	else
-		return (calc(n, 0);
+		return (calc(n, 0));
 }
 /**
  *calc- does the calculation of square root
