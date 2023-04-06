@@ -1,5 +1,5 @@
 #include "main.h"
-int calc(int x, int y);
+int calc(int y, int x);
 /**
  *_sqrt_recursion - calls the square root calculator
  *@n: number to find its square root
@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
  *Return: returns the square root recursivly
  */
 
-int calc(int x, int y)
+int calc(int y, int x)
 {
 	if (x * x == y)
 		return (x);
