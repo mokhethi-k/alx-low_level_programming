@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	char *strc;
 
 	len = 0;
-	while (*str != '\0')
+	while (str[len] != '\0')
 	{
 		len++;
 	}
@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	if (str == NULL || strc == NULL)
 		return (NULL);
 
-	for (i = 0; i < (len + 1); i++)
+	for (i = 0; str[i]; i++)
 	{
 		strc[i] = str[i];
 	}
