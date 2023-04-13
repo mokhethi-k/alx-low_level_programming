@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- *malloc_checked - checks if malloc failed or succedded on allocating the required memory
+ *malloc_checked - checks if malloc failed or succedded
  *@b: number of bytes to be allocated
  *Return: returns pointer or terminate process with status value 98
  */
