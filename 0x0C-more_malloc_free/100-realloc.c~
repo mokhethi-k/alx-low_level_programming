@@ -1,0 +1,62 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ *_memcpy - coppies the memory area
+ *@dest: the destination memory
+ *@src: the source where the memory id copied from
+ *@n: number of bytes to be copied
+ *Return: returns a pointer to destination memory
+ */
+
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	int i, j = n;
+
+	for (i = 0; i < j; i++)
+	{
+		dest[i] = src[i];
+		n--;
+	}
+	return (dest);
+}
+
+/**
+ *_realloc - reallocates memory
+ *@ptr: memory to previously allocated memory
+ *@old_size: bytes previously allocated for ptr
+ *@new_size: new size
+ *Return: pointer
+ */
+
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+{
+
+	void *new_mem;
+	if (new_size == 0)
+	{
+		free(ptr);
+		return (NULL);
+	}
+
+	if (ptr == NULL)
+		return (malloc(new_size));
+
+	if (new_size == old_size)
+		return (ptr);
+	new_mem = malloc(new_size);
+
+	if (new_mem == NULL)
+		return (NULL);
+
+	if (old_size < new_size)
+	{
+		_memcpy(new_mem, ptr, old_size);
+	}
+	else
+	{
+		_memcpy(new_mem, ptr, new_size);
+	}
+	free(ptr);
+	return (new_mem);
+}
