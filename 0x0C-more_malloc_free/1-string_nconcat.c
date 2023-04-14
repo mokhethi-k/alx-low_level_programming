@@ -67,21 +67,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = len2;
 	}
-
-	if (n < len2)
-	{
-		strings = malloc(sizeof(char) * (len1 + n + 1));
-	}
-	else
-	{
-		strings = malloc(sizeof(char) * (len1 + len2 + 1));
-	}
+	strings = malloc(sizeof(char) * (len1 + n + 1));
 	if (strings == NULL)
 		return (NULL);
-	if (s1 != NULL)
-	{
-		_memcpy(strings, s1, len1);
-	}
+
+	_memcpy(strings, s1, len1);
 	_memcpy(strings + len1, s2, n);
 	strings[len1 + n] = '\0';
 	return (strings);
