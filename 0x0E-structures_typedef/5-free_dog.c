@@ -9,9 +9,9 @@
 
 void free_dog(dog_t *d)
 {
-	if (dog_t)
+	if (d)
 	{
-		free(dog_t);
-		dog_t = NULL;
+		free(d);
+		d = NULL;
 	}
 }
