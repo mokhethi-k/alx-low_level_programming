@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *main Entry point of the program
+ *main - Entry point of the program
  *Description: prints the name of the file
  *Return: Returns 0 on success
  */
