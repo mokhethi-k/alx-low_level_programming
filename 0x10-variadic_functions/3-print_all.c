@@ -12,11 +12,9 @@ void print_all(const char * const format, ...)
 {
 	int i;
 	char *string, *com = "";
-
 	va_list args;
 
 	va_start(args, format);
-
 	if (format)
 	{
 		i = 0;
@@ -48,8 +46,6 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
-
 	printf("\n");
 	va_end(args);
-	
 }
