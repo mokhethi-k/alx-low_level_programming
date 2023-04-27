@@ -4,12 +4,12 @@
 /**
  *print_list - prints the list
  *@h: pointer to a list
- *Return: returns data of type size_t
+ *Return: returns number of node
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t i = 0;
+	size_t nodes = 0;
 
 	while (h != NULL)
 	{
@@ -21,8 +21,10 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%u] %s\n", h->len, h->str);
 		}
+
 		h = h->next;
-		i++;
+		nodes++;
 	}
-	return (i);
+
+	return (nodes);
 }
