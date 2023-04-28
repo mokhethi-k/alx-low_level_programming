@@ -1,6 +1,6 @@
 	section .data
-	hello db 'Hello, Holberton', 0Ah ;
-	format db '%s'			  ;
+	hello db 'Hello, Holberton', 0 ;
+	format db '%s', 0Ah, 0	       ;
 
 	section .text
 	global main
@@ -12,7 +12,7 @@ main:
 
 	mov rdi, format		;
 	mov rsi, hello		;
-	xor eax, eax		;
+	xor eax, 0		;
 	call printf		;
 	mov rsp, rbp		;
 	pop rbp			;
