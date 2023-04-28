@@ -39,3 +39,11 @@ mandatory
 Write a function that frees a list_t list.
 
 Prototype: void free_list(list_t *head);
+
+5. The Hare and the Tortoise
+#advanced
+
+
+Write a function that prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n without being called in the main function.
+
+You are allowed to use the printf function
