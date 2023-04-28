@@ -3,12 +3,6 @@
 #include <stdlib.h>
 
 /**
- *node - structure
- *@data: data at the current node
- *@data: pointer to next data
- */
-
-/**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
