@@ -1,0 +1,8 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * main - multipy two numbers
+ *@argc: number of arguements passed
+ *@argv: an array of arguements passed
+ *Return: always returns 0 on success
+ */

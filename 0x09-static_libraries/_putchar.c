@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
- * _putchar writes _putchar to stdout
+ * _putchar - writes c to stdout
  * @c: writing to stdout using _putchar
  * Return: it returns 0 on success
  *On error, -1 is returned and errno is set appropriately.
