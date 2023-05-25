@@ -13,7 +13,7 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	while (text_content[len] != '\0')
+	while (text_content != NULL)
 		len++;
 	fl = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	written  = write(fl, text_content, len);
