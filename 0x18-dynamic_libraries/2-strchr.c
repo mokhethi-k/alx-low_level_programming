@@ -10,7 +10,12 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	int len = sizeof(s) / sizeof(s[0]);
+	int len;
+
+	while (*s != '\0')
+	{
+		len++;
+	}
 
 	while (i < len)
 	{
